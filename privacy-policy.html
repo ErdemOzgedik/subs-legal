@@ -1,472 +1,731 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Subs — Gizlilik Politikası / Privacy Policy</title>
-  <style>
-    :root {
-      --bg:        #0D0D12;
-      --bg2:       #14141C;
-      --bg3:       #1A1A28;
-      --text:      #FFFFFF;
-      --text2:     rgba(255,255,255,0.70);
-      --text3:     rgba(255,255,255,0.45);
-      --gold:      #C9A84C;
-      --gold-light:#E8D48B;
-      --border:    rgba(255,255,255,0.08);
-      --success:   #5DCAA5;
-      --warning:   #E8D48B;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subs — Gizlilik Politikası / Privacy Policy</title>
+    <style>
+      :root {
+        --bg: #0d0d12;
+        --bg2: #14141c;
+        --bg3: #1a1a28;
+        --text: #ffffff;
+        --text2: rgba(255, 255, 255, 0.7);
+        --text3: rgba(255, 255, 255, 0.45);
+        --gold: #c9a84c;
+        --gold-light: #e8d48b;
+        --border: rgba(255, 255, 255, 0.08);
+        --success: #5dcaa5;
+        --warning: #e8d48b;
+      }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-    body {
-      background: var(--bg);
-      color: var(--text2);
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-size: 15px;
-      line-height: 1.7;
-      padding: 0 16px 80px;
-    }
+      body {
+        background: var(--bg);
+        color: var(--text2);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        font-size: 15px;
+        line-height: 1.7;
+        padding: 0 16px 80px;
+      }
 
-    header {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 0 32px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
+      header {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 48px 0 32px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
 
-    .logo-area h1 {
-      font-size: 28px;
-      font-weight: 600;
-      color: var(--text);
-      letter-spacing: -0.5px;
-    }
+      .logo-area h1 {
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--text);
+        letter-spacing: -0.5px;
+      }
 
-    .logo-area .subtitle {
-      font-size: 13px;
-      color: var(--text3);
-      margin-top: 4px;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-    }
+      .logo-area .subtitle {
+        font-size: 13px;
+        color: var(--text3);
+        margin-top: 4px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
 
-    .lang-toggle {
-      display: flex;
-      gap: 6px;
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 4px;
-    }
+      .lang-toggle {
+        display: flex;
+        gap: 6px;
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 4px;
+      }
 
-    .lang-toggle button {
-      background: none;
-      border: none;
-      color: var(--text3);
-      font-size: 13px;
-      font-weight: 500;
-      padding: 6px 14px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: all 0.15s;
-    }
+      .lang-toggle button {
+        background: none;
+        border: none;
+        color: var(--text3);
+        font-size: 13px;
+        font-weight: 500;
+        padding: 6px 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.15s;
+      }
 
-    .lang-toggle button.active {
-      background: var(--gold);
-      color: #000;
-    }
+      .lang-toggle button.active {
+        background: var(--gold);
+        color: #000;
+      }
 
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-    }
+      .container {
+        max-width: 720px;
+        margin: 0 auto;
+      }
 
-    .effective-date {
-      font-size: 12px;
-      color: var(--text3);
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      margin-bottom: 32px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid var(--border);
-    }
+      .effective-date {
+        font-size: 12px;
+        color: var(--text3);
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border);
+      }
 
-    section {
-      margin-bottom: 36px;
-    }
+      section {
+        margin-bottom: 36px;
+      }
 
-    h2 {
-      font-size: 17px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 12px;
-      letter-spacing: -0.2px;
-      padding-left: 12px;
-      border-left: 3px solid var(--gold);
-    }
+      h2 {
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 12px;
+        letter-spacing: -0.2px;
+        padding-left: 12px;
+        border-left: 3px solid var(--gold);
+      }
 
-    p { margin-bottom: 10px; }
+      p {
+        margin-bottom: 10px;
+      }
 
-    ul {
-      padding-left: 20px;
-      margin-bottom: 10px;
-    }
+      ul {
+        padding-left: 20px;
+        margin-bottom: 10px;
+      }
 
-    ul li { margin-bottom: 6px; }
+      ul li {
+        margin-bottom: 6px;
+      }
 
-    .card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 16px 20px;
-      margin-top: 12px;
-    }
+      .card {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 16px 20px;
+        margin-top: 12px;
+      }
 
-    .card-success {
-      border-color: rgba(93,202,165,0.3);
-      background: rgba(93,202,165,0.05);
-    }
+      .card-success {
+        border-color: rgba(93, 202, 165, 0.3);
+        background: rgba(93, 202, 165, 0.05);
+      }
 
-    .card-warning {
-      border-color: rgba(232,212,139,0.3);
-      background: rgba(232,212,139,0.05);
-    }
+      .card-warning {
+        border-color: rgba(232, 212, 139, 0.3);
+        background: rgba(232, 212, 139, 0.05);
+      }
 
-    .tag {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      padding: 2px 8px;
-      border-radius: 4px;
-      margin-bottom: 8px;
-    }
+      .tag {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+      }
 
-    .tag-success { background: rgba(93,202,165,0.15); color: var(--success); }
-    .tag-warning { background: rgba(232,212,139,0.12); color: var(--warning); }
+      .tag-success {
+        background: rgba(93, 202, 165, 0.15);
+        color: var(--success);
+      }
+      .tag-warning {
+        background: rgba(232, 212, 139, 0.12);
+        color: var(--warning);
+      }
 
-    .third-party-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 12px;
-      font-size: 13px;
-    }
+      .third-party-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 12px;
+        font-size: 13px;
+      }
 
-    .third-party-table th {
-      text-align: left;
-      color: var(--text3);
-      font-size: 11px;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      padding: 8px 12px;
-      border-bottom: 1px solid var(--border);
-    }
+      .third-party-table th {
+        text-align: left;
+        color: var(--text3);
+        font-size: 11px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        padding: 8px 12px;
+        border-bottom: 1px solid var(--border);
+      }
 
-    .third-party-table td {
-      padding: 10px 12px;
-      border-bottom: 1px solid var(--border);
-      vertical-align: top;
-    }
+      .third-party-table td {
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+      }
 
-    .third-party-table tr:last-child td { border-bottom: none; }
+      .third-party-table tr:last-child td {
+        border-bottom: none;
+      }
 
-    .third-party-table a {
-      color: var(--gold-light);
-      text-decoration: none;
-    }
+      .third-party-table a {
+        color: var(--gold-light);
+        text-decoration: none;
+      }
 
-    .third-party-table a:hover { text-decoration: underline; }
+      .third-party-table a:hover {
+        text-decoration: underline;
+      }
 
-    .contact-card {
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px 24px;
-    }
+      .contact-card {
+        background: var(--bg3);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
 
-    .contact-card a {
-      color: var(--gold-light);
-      text-decoration: none;
-      font-weight: 500;
-    }
+      .contact-card a {
+        color: var(--gold-light);
+        text-decoration: none;
+        font-weight: 500;
+      }
 
-    .contact-card a:hover { text-decoration: underline; }
+      .contact-card a:hover {
+        text-decoration: underline;
+      }
 
-    footer {
-      max-width: 720px;
-      margin: 48px auto 0;
-      padding-top: 24px;
-      border-top: 1px solid var(--border);
-      font-size: 12px;
-      color: var(--text3);
-      text-align: center;
-    }
+      footer {
+        max-width: 720px;
+        margin: 48px auto 0;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        font-size: 12px;
+        color: var(--text3);
+        text-align: center;
+      }
 
-    /* Language sections */
-    [data-lang] { display: none; }
-    [data-lang].visible { display: block; }
-  </style>
-</head>
-<body>
-
-<header>
-  <div class="logo-area">
-    <h1>Subs</h1>
-    <div class="subtitle">Gizlilik Politikası / Privacy Policy</div>
-  </div>
-  <div class="lang-toggle">
-    <button class="active" onclick="setLang('tr')">Türkçe</button>
-    <button onclick="setLang('en')">English</button>
-  </div>
-</header>
-
-<div class="container">
-
-  <!-- ===== TURKISH ===== -->
-  <div data-lang="tr" class="visible">
-
-    <p class="effective-date">Yürürlük tarihi: 2 Nisan 2026 &nbsp;·&nbsp; Son güncelleme: 2 Nisan 2026</p>
-
-    <section>
-      <h2>1. Giriş</h2>
-      <p>
-        <strong style="color: var(--text)">Subs</strong>, dijital aboneliklerinizi takip etmenize yardımcı olan kişisel bir abonelik yönetim uygulamasıdır.
-        Bu gizlilik politikası, uygulamanın veri uygulamalarını şeffaf biçimde açıklar.
-      </p>
-      <div class="card card-success">
-        <div class="tag tag-success">Özet</div>
-        <p style="margin:0">Kişisel verileriniz toplanmaz ve sunucularımıza gönderilmez. Girdiğiniz tüm abonelik bilgileri yalnızca cihazınızda saklanır.</p>
+      /* Language sections */
+      [data-lang] {
+        display: none;
+      }
+      [data-lang].visible {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-area">
+        <h1>Subs</h1>
+        <div class="subtitle">Gizlilik Politikası / Privacy Policy</div>
       </div>
-    </section>
-
-    <section>
-      <h2>2. Topladığımız Veriler</h2>
-      <p>Subs, kişisel veri toplamamaktadır. Uygulamaya girdiğiniz tüm bilgiler (abonelik adı, tutar, tarih vb.) yalnızca cihazınızın yerel depolama alanında tutulur.</p>
-      <p>Hiçbir bilgi Subs sunucularına, buluta veya üçüncü taraf analitik sistemlerine gönderilmez.</p>
-    </section>
-
-    <section>
-      <h2>3. Yerel Depolama</h2>
-      <p>Verileriniz cihazınızdaki <strong style="color:var(--text)">SQLite</strong> veritabanında saklanır. Bu veriler:</p>
-      <ul>
-        <li>Yalnızca siz ve uygulamanız tarafından erişilebilir</li>
-        <li>Uygulamayı sildiğinizde tamamen silinir</li>
-        <li>Cihaz dışına aktarılmaz</li>
-        <li>Bulut yedeklemesi yapılmaz (Google Drive, iCloud vb. ile otomatik senkronizasyon yoktur)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>4. Üçüncü Taraf Servisler</h2>
-      <p>Uygulama aşağıdaki üçüncü taraf servisleri kullanmaktadır. Bu servisler kendi gizlilik politikaları kapsamında veri işleyebilir:</p>
-
-      <table class="third-party-table">
-        <thead>
-          <tr>
-            <th>Servis</th>
-            <th>Amaç</th>
-            <th>İşlenen Veri</th>
-            <th>Politika</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong style="color:var(--text)">RevenueCat</strong></td>
-            <td>Uygulama içi satın alma ve premium abonelik yönetimi</td>
-            <td>Satın alma geçmişi, cihaz kimliği</td>
-            <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></td>
-          </tr>
-          <tr>
-            <td><strong style="color:var(--text)">Google AdMob</strong></td>
-            <td>Ücretsiz kullanıcılara reklam gösterimi</td>
-            <td>Reklam kimliği (IDFA/GAID), kullanım verileri</td>
-            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
-          </tr>
-          <tr>
-            <td><strong style="color:var(--text)">ExchangeRate-API</strong></td>
-            <td>Döviz kuru bilgisi (USD/EUR → TRY)</td>
-            <td>IP adresi (standart HTTP isteği)</td>
-            <td><a href="https://www.exchangerate-api.com/privacy" target="_blank" rel="noopener">exchangerate-api.com/privacy</a></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="card card-warning" style="margin-top:16px">
-        <div class="tag tag-warning">Reklam ve Gizlilik</div>
-        <p style="margin:0">Reklam gösterimi için Google'ın Kullanıcı Mesajlaşma Platformu (UMP) aracılığıyla izniniz alınır. İzin vermemeniz durumunda kişiselleştirilmemiş reklamlar gösterilir. Premium abonelik satın alarak reklamları tamamen kapatabilirsiniz.</p>
+      <div class="lang-toggle">
+        <button class="active" onclick="setLang('tr')">Türkçe</button>
+        <button onclick="setLang('en')">English</button>
       </div>
-    </section>
+    </header>
 
-    <section>
-      <h2>5. Marka Logo Bildirimi</h2>
-      <p>
-        Subs uygulamasında Netflix, Spotify, Apple Music ve diğer servislere ait logo ve ticari markalar yalnızca
-        <strong style="color:var(--text)">tanımlama amaçlı</strong> kullanılmaktadır.
-        Bu logolar, ilgili markaların mülkiyetindedir. Subs bu markalarla herhangi bir bağlantı içermemekte
-        veya bu markalar tarafından onaylanmamaktadır.
-      </p>
-    </section>
-
-    <section>
-      <h2>6. Çocukların Gizliliği</h2>
-      <p>Subs, 13 yaşın altındaki çocuklara yönelik değildir ve bu kişilerden bilerek veri toplamaz.</p>
-    </section>
-
-    <section>
-      <h2>7. Bu Politikadaki Değişiklikler</h2>
-      <p>
-        Gizlilik politikasında yapılacak önemli değişiklikler bu sayfada yayımlanır ve yürürlük tarihi güncellenir.
-        Değişikliklerden haberdar olmak için bu sayfayı periyodik olarak ziyaret etmenizi öneririz.
-      </p>
-    </section>
-
-    <section>
-      <h2>8. İletişim</h2>
-      <p>Gizlilikle ilgili sorularınız için:</p>
-      <div class="contact-card">
-        <p>📧 <a href="mailto:erdem.ozgedik@gmail.com">erdem.ozgedik@gmail.com</a></p>
-        <p style="margin-top:8px;font-size:13px;color:var(--text3)">
-          Geliştirici: Erdem Özgedik &nbsp;·&nbsp; Uygulama: Subs v1.0
+    <div class="container">
+      <!-- ===== TURKISH ===== -->
+      <div data-lang="tr" class="visible">
+        <p class="effective-date">
+          Yürürlük tarihi: 2 Nisan 2026 &nbsp;·&nbsp; Son güncelleme: 2 Nisan
+          2026
         </p>
+
+        <section>
+          <h2>1. Giriş</h2>
+          <p>
+            <strong style="color: var(--text)">Subs</strong>, dijital
+            aboneliklerinizi takip etmenize yardımcı olan kişisel bir abonelik
+            yönetim uygulamasıdır. Bu gizlilik politikası, uygulamanın veri
+            uygulamalarını şeffaf biçimde açıklar.
+          </p>
+          <div class="card card-success">
+            <div class="tag tag-success">Özet</div>
+            <p style="margin: 0">
+              Kişisel verileriniz toplanmaz ve sunucularımıza gönderilmez.
+              Girdiğiniz tüm abonelik bilgileri yalnızca cihazınızda saklanır.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>2. Topladığımız Veriler</h2>
+          <p>
+            Subs, kişisel veri toplamamaktadır. Uygulamaya girdiğiniz tüm
+            bilgiler (abonelik adı, tutar, tarih vb.) yalnızca cihazınızın yerel
+            depolama alanında tutulur.
+          </p>
+          <p>
+            Hiçbir bilgi Subs sunucularına, buluta veya üçüncü taraf analitik
+            sistemlerine gönderilmez.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Yerel Depolama</h2>
+          <p>
+            Verileriniz cihazınızdaki
+            <strong style="color: var(--text)">SQLite</strong> veritabanında
+            saklanır. Bu veriler:
+          </p>
+          <ul>
+            <li>Yalnızca siz ve uygulamanız tarafından erişilebilir</li>
+            <li>Uygulamayı sildiğinizde tamamen silinir</li>
+            <li>Cihaz dışına aktarılmaz</li>
+            <li>
+              Bulut yedeklemesi yapılmaz (Google Drive, iCloud vb. ile otomatik
+              senkronizasyon yoktur)
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. Üçüncü Taraf Servisler</h2>
+          <p>
+            Uygulama aşağıdaki üçüncü taraf servisleri kullanmaktadır. Bu
+            servisler kendi gizlilik politikaları kapsamında veri işleyebilir:
+          </p>
+
+          <table class="third-party-table">
+            <thead>
+              <tr>
+                <th>Servis</th>
+                <th>Amaç</th>
+                <th>İşlenen Veri</th>
+                <th>Politika</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong style="color: var(--text)">RevenueCat</strong></td>
+                <td>Uygulama içi satın alma ve premium abonelik yönetimi</td>
+                <td>Satın alma geçmişi, cihaz kimliği</td>
+                <td>
+                  <a
+                    href="https://www.revenuecat.com/privacy"
+                    target="_blank"
+                    rel="noopener"
+                    >revenuecat.com/privacy</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong style="color: var(--text)">Google AdMob</strong>
+                </td>
+                <td>Ücretsiz kullanıcılara reklam gösterimi</td>
+                <td>Reklam kimliği (IDFA/GAID), kullanım verileri</td>
+                <td>
+                  <a
+                    href="https://policies.google.com/privacy"
+                    target="_blank"
+                    rel="noopener"
+                    >policies.google.com/privacy</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong style="color: var(--text)">ExchangeRate-API</strong>
+                </td>
+                <td>Döviz kuru bilgisi (USD/EUR → TRY)</td>
+                <td>IP adresi (standart HTTP isteği)</td>
+                <td>
+                  <a
+                    href="https://www.exchangerate-api.com/privacy"
+                    target="_blank"
+                    rel="noopener"
+                    >exchangerate-api.com/privacy</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="card card-warning" style="margin-top: 16px">
+            <div class="tag tag-warning">Reklam ve Gizlilik</div>
+            <p style="margin: 0">
+              Reklam gösterimi için Google'ın Kullanıcı Mesajlaşma Platformu
+              (UMP) aracılığıyla izniniz alınır. İzin vermemeniz durumunda
+              kişiselleştirilmemiş reklamlar gösterilir. Premium abonelik satın
+              alarak reklamları tamamen kapatabilirsiniz.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>5. Marka Logo Bildirimi</h2>
+          <p>
+            Subs uygulamasında Netflix, Spotify, Apple Music ve diğer servislere
+            ait logo ve ticari markalar yalnızca
+            <strong style="color: var(--text)">tanımlama amaçlı</strong>
+            kullanılmaktadır. Bu logolar, ilgili markaların mülkiyetindedir.
+            Subs bu markalarla herhangi bir bağlantı içermemekte veya bu
+            markalar tarafından onaylanmamaktadır.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Çocukların Gizliliği</h2>
+          <p>
+            Subs, 13 yaşın altındaki çocuklara yönelik değildir ve bu kişilerden
+            bilerek veri toplamaz.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Bu Politikadaki Değişiklikler</h2>
+          <p>
+            Gizlilik politikasında yapılacak önemli değişiklikler bu sayfada
+            yayımlanır ve yürürlük tarihi güncellenir. Değişikliklerden haberdar
+            olmak için bu sayfayı periyodik olarak ziyaret etmenizi öneririz.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Destek &amp; İletişim</h2>
+          <p>Sık sorulan sorular:</p>
+          <div class="card" style="margin-bottom: 12px">
+            <p>
+              <strong style="color: var(--text)"
+                >Verilerim yedekleniyor mu?</strong
+              >
+            </p>
+            <p style="margin: 4px 0 0">
+              Tüm veriler cihazınızda yerel olarak saklanır. Uygulamayı
+              sildiğinizde veriler kalıcı olarak silinir. Cihaz yedekleme
+              (iCloud / Google Yedekleme) açıksa sistem abonelik verilerini
+              yedekleyebilir.
+            </p>
+          </div>
+          <div class="card" style="margin-bottom: 12px">
+            <p>
+              <strong style="color: var(--text)"
+                >Premium aboneliğimi nasıl iptal ederim?</strong
+              >
+            </p>
+            <p style="margin: 4px 0 0">
+              Premium abonelikler App Store veya Google Play üzerinden
+              yönetilir. İptal için cihazınızın abonelik ayarlarına gidin. Subs
+              uygulama içinden iptal işlemi yapamaz.
+            </p>
+          </div>
+          <div class="card" style="margin-bottom: 12px">
+            <p>
+              <strong style="color: var(--text)"
+                >Döviz kuru güncellenmedi, ne yapmalıyım?</strong
+              >
+            </p>
+            <p style="margin: 4px 0 0">
+              Kurlar 4 saatte bir güncellenir. İnternet bağlantınız varken
+              uygulamayı açın, otomatik olarak yenilenecektir.
+            </p>
+          </div>
+          <div class="card" style="margin-bottom: 16px">
+            <p>
+              <strong style="color: var(--text)"
+                >Bir aboneliği yanlışlıkla sildim.</strong
+              >
+            </p>
+            <p style="margin: 4px 0 0">
+              Silinen abonelikler kurtarılamaz. Lütfen manuel olarak yeniden
+              ekleyin.
+            </p>
+          </div>
+          <p>Destek, hata bildirimi veya gizlilik sorularınız için:</p>
+          <div class="contact-card">
+            <p>
+              📧
+              <a href="mailto:erdem.ozgedik@gmail.com"
+                >erdem.ozgedik@gmail.com</a
+              >
+            </p>
+            <p style="margin-top: 8px; font-size: 13px; color: var(--text3)">
+              Geliştirici: Erdem Özgedik &nbsp;·&nbsp; Uygulama: Subs v1.0
+            </p>
+          </div>
+        </section>
       </div>
-    </section>
+      <!-- /tr -->
 
-  </div><!-- /tr -->
-
-  <!-- ===== ENGLISH ===== -->
-  <div data-lang="en">
-
-    <p class="effective-date">Effective date: April 2, 2026 &nbsp;·&nbsp; Last updated: April 2, 2026</p>
-
-    <section>
-      <h2>1. Introduction</h2>
-      <p>
-        <strong style="color: var(--text)">Subs</strong> is a personal subscription management app that helps you track your digital subscriptions.
-        This privacy policy transparently describes the app's data practices.
-      </p>
-      <div class="card card-success">
-        <div class="tag tag-success">Summary</div>
-        <p style="margin:0">No personal data is collected or transmitted to our servers. All subscription information you enter is stored only on your device.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>2. Data We Collect</h2>
-      <p>Subs does not collect personal data. All information you enter into the app (subscription name, amount, date, etc.) is stored only in the local storage of your device.</p>
-      <p>No information is sent to Subs servers, the cloud, or any third-party analytics systems.</p>
-    </section>
-
-    <section>
-      <h2>3. Local Storage</h2>
-      <p>Your data is stored in an <strong style="color:var(--text)">SQLite</strong> database on your device. This data:</p>
-      <ul>
-        <li>Is accessible only by you and the app</li>
-        <li>Is permanently deleted when you uninstall the app</li>
-        <li>Is never transferred outside your device</li>
-        <li>Is not automatically backed up to any cloud service (Google Drive, iCloud, etc.)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>4. Third-Party Services</h2>
-      <p>The app uses the following third-party services. These services may process data under their own privacy policies:</p>
-
-      <table class="third-party-table">
-        <thead>
-          <tr>
-            <th>Service</th>
-            <th>Purpose</th>
-            <th>Data Processed</th>
-            <th>Policy</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong style="color:var(--text)">RevenueCat</strong></td>
-            <td>In-app purchase and premium subscription management</td>
-            <td>Purchase history, device identifier</td>
-            <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></td>
-          </tr>
-          <tr>
-            <td><strong style="color:var(--text)">Google AdMob</strong></td>
-            <td>Ad display for free-tier users</td>
-            <td>Advertising ID (IDFA/GAID), usage data</td>
-            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
-          </tr>
-          <tr>
-            <td><strong style="color:var(--text)">ExchangeRate-API</strong></td>
-            <td>Exchange rate data (USD/EUR → TRY)</td>
-            <td>IP address (standard HTTP request)</td>
-            <td><a href="https://www.exchangerate-api.com/privacy" target="_blank" rel="noopener">exchangerate-api.com/privacy</a></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="card card-warning" style="margin-top:16px">
-        <div class="tag tag-warning">Ads &amp; Privacy</div>
-        <p style="margin:0">Your consent for personalized ads is requested via Google's User Messaging Platform (UMP). If consent is not given, non-personalized ads are shown instead. You can remove all ads entirely by purchasing a Premium subscription.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>5. Brand Logo Disclaimer</h2>
-      <p>
-        Logos and trademarks of Netflix, Spotify, Apple Music, and other services displayed in Subs are used
-        <strong style="color:var(--text)">for identification purposes only</strong>.
-        These logos are the property of their respective owners. Subs is not affiliated with or endorsed by these brands.
-      </p>
-    </section>
-
-    <section>
-      <h2>6. Children's Privacy</h2>
-      <p>Subs is not directed at children under the age of 13 and does not knowingly collect data from them.</p>
-    </section>
-
-    <section>
-      <h2>7. Changes to This Policy</h2>
-      <p>
-        Material changes to this privacy policy will be published on this page with an updated effective date.
-        We recommend checking this page periodically to stay informed of any updates.
-      </p>
-    </section>
-
-    <section>
-      <h2>8. Contact</h2>
-      <p>For privacy-related questions:</p>
-      <div class="contact-card">
-        <p>📧 <a href="mailto:erdem.ozgedik@gmail.com">erdem.ozgedik@gmail.com</a></p>
-        <p style="margin-top:8px;font-size:13px;color:var(--text3)">
-          Developer: Erdem Özgedik &nbsp;·&nbsp; App: Subs v1.0
+      <!-- ===== ENGLISH ===== -->
+      <div data-lang="en">
+        <p class="effective-date">
+          Effective date: April 2, 2026 &nbsp;·&nbsp; Last updated: April 2,
+          2026
         </p>
+
+        <section>
+          <h2>1. Introduction</h2>
+          <p>
+            <strong style="color: var(--text)">Subs</strong> is a personal
+            subscription management app that helps you track your digital
+            subscriptions. This privacy policy transparently describes the app's
+            data practices.
+          </p>
+          <div class="card card-success">
+            <div class="tag tag-success">Summary</div>
+            <p style="margin: 0">
+              No personal data is collected or transmitted to our servers. All
+              subscription information you enter is stored only on your device.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>2. Data We Collect</h2>
+          <p>
+            Subs does not collect personal data. All information you enter into
+            the app (subscription name, amount, date, etc.) is stored only in
+            the local storage of your device.
+          </p>
+          <p>
+            No information is sent to Subs servers, the cloud, or any
+            third-party analytics systems.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Local Storage</h2>
+          <p>
+            Your data is stored in an
+            <strong style="color: var(--text)">SQLite</strong> database on your
+            device. This data:
+          </p>
+          <ul>
+            <li>Is accessible only by you and the app</li>
+            <li>Is permanently deleted when you uninstall the app</li>
+            <li>Is never transferred outside your device</li>
+            <li>
+              Is not automatically backed up to any cloud service (Google Drive,
+              iCloud, etc.)
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. Third-Party Services</h2>
+          <p>
+            The app uses the following third-party services. These services may
+            process data under their own privacy policies:
+          </p>
+
+          <table class="third-party-table">
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Purpose</th>
+                <th>Data Processed</th>
+                <th>Policy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong style="color: var(--text)">RevenueCat</strong></td>
+                <td>In-app purchase and premium subscription management</td>
+                <td>Purchase history, device identifier</td>
+                <td>
+                  <a
+                    href="https://www.revenuecat.com/privacy"
+                    target="_blank"
+                    rel="noopener"
+                    >revenuecat.com/privacy</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong style="color: var(--text)">Google AdMob</strong>
+                </td>
+                <td>Ad display for free-tier users</td>
+                <td>Advertising ID (IDFA/GAID), usage data</td>
+                <td>
+                  <a
+                    href="https://policies.google.com/privacy"
+                    target="_blank"
+                    rel="noopener"
+                    >policies.google.com/privacy</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong style="color: var(--text)">ExchangeRate-API</strong>
+                </td>
+                <td>Exchange rate data (USD/EUR → TRY)</td>
+                <td>IP address (standard HTTP request)</td>
+                <td>
+                  <a
+                    href="https://www.exchangerate-api.com/privacy"
+                    target="_blank"
+                    rel="noopener"
+                    >exchangerate-api.com/privacy</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="card card-warning" style="margin-top: 16px">
+            <div class="tag tag-warning">Ads &amp; Privacy</div>
+            <p style="margin: 0">
+              Your consent for personalized ads is requested via Google's User
+              Messaging Platform (UMP). If consent is not given,
+              non-personalized ads are shown instead. You can remove all ads
+              entirely by purchasing a Premium subscription.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>5. Brand Logo Disclaimer</h2>
+          <p>
+            Logos and trademarks of Netflix, Spotify, Apple Music, and other
+            services displayed in Subs are used
+            <strong style="color: var(--text)"
+              >for identification purposes only</strong
+            >. These logos are the property of their respective owners. Subs is
+            not affiliated with or endorsed by these brands.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Children's Privacy</h2>
+          <p>
+            Subs is not directed at children under the age of 13 and does not
+            knowingly collect data from them.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Changes to This Policy</h2>
+          <p>
+            Material changes to this privacy policy will be published on this
+            page with an updated effective date. We recommend checking this page
+            periodically to stay informed of any updates.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Support &amp; Contact</h2>
+          <p>Frequently asked questions:</p>
+          <div class="card" style="margin-bottom: 12px">
+            <p>
+              <strong style="color: var(--text)">Is my data backed up?</strong>
+            </p>
+            <p style="margin: 4px 0 0">
+              All data is stored locally on your device. Uninstalling the app
+              permanently deletes all data. If device backup (iCloud / Google
+              Backup) is enabled, the system may back up your subscription data.
+            </p>
+          </div>
+          <div class="card" style="margin-bottom: 12px">
+            <p>
+              <strong style="color: var(--text)"
+                >How do I cancel my Premium subscription?</strong
+              >
+            </p>
+            <p style="margin: 4px 0 0">
+              Premium subscriptions are managed through the App Store or Google
+              Play. Go to your device's subscription settings to cancel. Subs
+              cannot cancel subscriptions from within the app.
+            </p>
+          </div>
+          <div class="card" style="margin-bottom: 12px">
+            <p>
+              <strong style="color: var(--text)"
+                >The exchange rate hasn't updated. What should I do?</strong
+              >
+            </p>
+            <p style="margin: 4px 0 0">
+              Rates are refreshed every 4 hours. Open the app with an active
+              internet connection and it will update automatically.
+            </p>
+          </div>
+          <div class="card" style="margin-bottom: 16px">
+            <p>
+              <strong style="color: var(--text)"
+                >I accidentally deleted a subscription.</strong
+              >
+            </p>
+            <p style="margin: 4px 0 0">
+              Deleted subscriptions cannot be recovered. Please re-add it
+              manually.
+            </p>
+          </div>
+          <p>For support, bug reports, or privacy questions:</p>
+          <div class="contact-card">
+            <p>
+              📧
+              <a href="mailto:erdem.ozgedik@gmail.com"
+                >erdem.ozgedik@gmail.com</a
+              >
+            </p>
+            <p style="margin-top: 8px; font-size: 13px; color: var(--text3)">
+              Developer: Erdem Özgedik &nbsp;·&nbsp; App: Subs v1.0
+            </p>
+          </div>
+        </section>
       </div>
-    </section>
+      <!-- /en -->
+    </div>
+    <!-- /container -->
 
-  </div><!-- /en -->
+    <footer>
+      <p>
+        © 2026 Erdem Özgedik · Subs App ·
+        <a
+          href="mailto:erdem.ozgedik@gmail.com"
+          style="color: var(--gold-light); text-decoration: none"
+          >erdem.ozgedik@gmail.com</a
+        >
+      </p>
+    </footer>
 
-</div><!-- /container -->
-
-<footer>
-  <p>© 2026 Erdem Özgedik · Subs App · <a href="mailto:erdem.ozgedik@gmail.com" style="color:var(--gold-light);text-decoration:none">erdem.ozgedik@gmail.com</a></p>
-</footer>
-
-<script>
-  function setLang(lang) {
-    document.querySelectorAll('[data-lang]').forEach(el => {
-      el.classList.toggle('visible', el.dataset.lang === lang);
-    });
-    document.querySelectorAll('.lang-toggle button').forEach(btn => {
-      btn.classList.toggle('active', btn.textContent.toLowerCase().includes(lang === 'tr' ? 'türkçe' : 'english'));
-    });
-    document.documentElement.lang = lang;
-  }
-</script>
-
-</body>
+    <script>
+      function setLang(lang) {
+        document.querySelectorAll("[data-lang]").forEach((el) => {
+          el.classList.toggle("visible", el.dataset.lang === lang);
+        });
+        document.querySelectorAll(".lang-toggle button").forEach((btn) => {
+          btn.classList.toggle(
+            "active",
+            btn.textContent
+              .toLowerCase()
+              .includes(lang === "tr" ? "türkçe" : "english"),
+          );
+        });
+        document.documentElement.lang = lang;
+      }
+    </script>
+  </body>
 </html>
